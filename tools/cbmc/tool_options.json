@@ -1,0 +1,38 @@
+[
+  {
+    "name": "",
+    "possible_values": ["--unwind 1","--unwind 5", "--unwind 10", "--unwind 25"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--unsigned-char",""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--round-to-plus-inf","--round-to-minus-inf", "--round-to-zero"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--reachability-slice","--reachability-slice-fb"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--drop-unused-functions",""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--max-field-sensitivity-array-size 1","--max-field-sensitivity-array-size 64", "--max-field-sensitivity-array-size 1234"]
+  },
+  {
+    "name": "",
+    "possible_values": ["","--partial-loops"]
+  },
+  {
+    "name": "",
+    "possible_values": ["","--string-printable"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--arrays-uf-never","--arrays-uf-always"]
+  }
+]

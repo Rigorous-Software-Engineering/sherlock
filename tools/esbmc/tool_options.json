@@ -1,0 +1,78 @@
+[
+  {
+    "name": "--unwind",
+    "possible_values": ["1","5","20","100"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--no-remove-unreachable", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--no-remove-no-op", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--partial-loops", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--goto-unwind", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--unlimited-goto-unwind", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--z3", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--tuple-node-flattener", "", "--tuple-sym-flattener"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--array-flattener", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--smt-during-symex", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--all-runs", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-wrapped", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-narrowing", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-eval-assumptions", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-arithmetic", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-bitwise", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-modular", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-simplify", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--interval-analysis-no-contract", ""]
+  }
+]

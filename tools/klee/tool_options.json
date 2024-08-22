@@ -1,0 +1,111 @@
+[
+  {
+    "name": "--cex-cache-superset",
+    "possible_values": ["0", "1"],
+    "description": "Use counterexample cache for superset queries"
+  },
+  {
+    "name": "--cex-cache-try-all",
+    "possible_values": ["0", "1"],
+    "description": "Try all counterexamples in cache before solving"
+  },
+  {
+    "name": "--solver-optimize-divides",
+    "possible_values": ["0", "1"],
+    "description": "Optimize divisions in the solver"
+  },
+  {
+    "name": "--return-null-on-zero-malloc",
+    "possible_values": ["0", "1"],
+    "description": "Return null on zero-sized malloc requests"
+  },
+  {
+    "name": "--verify-each",
+    "possible_values": ["0", "1"],
+    "description": "Verify each instruction"
+  },
+  {
+    "name": "--polly",
+    "possible_values": ["0", "1"],
+    "description": "Enable the polyhedral optimization plugin"
+  },
+  {
+    "name": "--polly-2nd-level-tiling",
+    "possible_values": ["0", "1"],
+    "description": "Enable second-level tiling with Polly"
+  },
+  {
+    "name": "--polly-enable-simplify",
+    "possible_values": ["0", "1"],
+    "description": "Enable simplification in Polly"
+  },
+  {
+    "name": "--polly-parallel",
+    "possible_values": ["0", "1"],
+    "description": "Enable parallelization in Polly"
+  },
+  {
+    "name": "--polly-register-tiling",
+    "possible_values": ["0", "1"],
+    "description": "Enable register tiling in Polly"
+  },
+  {
+    "name": "--polly-reschedule",
+    "possible_values": ["0", "1"],
+    "description": "Enable rescheduling in Polly"
+  },
+  {
+    "name": "--polly-stmt-granularity",
+    "possible_values": ["bb","scalar-indep","store"],
+    "description": "Granularity of statements in Polly"
+  },
+  {
+    "name": "--polly-tiling",
+    "possible_values": ["0", "1"],
+    "description": "Enable tiling in Polly"
+  },
+  {
+    "name": "--polly-vectorizer",
+    "possible_values": ["none", "polly", "stripmine"],
+    "description": "Enable vectorization in Polly (0=none, 1=slp, 2=loop)"
+  },
+  {
+    "name": "--search",
+    "possible_values": ["bfs", "dfs", "random-state", "random-path", "nurs:covnew", "nurs:md2u","nurs:depth","nurs:rp","nurs:icnt","nurs:cpicnt","nurs:qc"],
+    "description": "Search strategy in KLEE"
+  },
+  {
+    "name": "--solver-backend",
+    "possible_values": ["stp", "z3"]
+  },
+  {
+    "name": "--use-iterative-deepening-time-search",
+    "possible_values": ["0", "1"],
+    "description": "Use iterative deepening time search strategy"
+  },
+  {
+    "name": "--allow-seed-extension",
+    "possible_values": ["0", "1"],
+    "description": "Allow extension of seed inputs"
+  },
+  {
+    "name": "--allow-seed-truncation",
+    "possible_values": ["0", "1"],
+    "description": "Allow truncation of seed inputs"
+  },
+  {
+    "name": "--named-seed-matching",
+    "possible_values": ["0", "1"],
+    "description": "Use named seed matching"
+  },
+  {
+    "name": "--optimize",
+    "possible_values": ["0", "1"],
+    "description": "Enable optimizations in KLEE"
+  },
+  {
+    "name": "--use-batching-search",
+    "possible_values": ["0", "1"],
+    "description": "Enable optimizations in KLEE"
+  }
+]

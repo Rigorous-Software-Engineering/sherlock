@@ -1,0 +1,11 @@
+Options:
+
+-t <tool_name>: Specify the tool that should be tested. Available tools are 'cbmc', 'clam', 'cpa', 'esbmc', 'klee', 'mopsa', 'ultimate', 'symbiotic'
+-s <seed>: Specify an initial integer seed in [1,9999999], if omitted a random seed is chosen
+-b <budget>: Number of testing iteration to test each seed file
+-o <analyzer_options>: Specify options for the analyzer tested, ensure <analyzer_options> is separated from Sherlock's with quotes " "
+-w <seconds>: Abort the execution of the tool under test after this many seconds
+-l <ttl>: Specify the seed time-to-live, if omitted seeds are never removed/replaced
+-c: Continue testing with this seed file after a bug is found
+-1: Test each file in the directory just once
+<test_path>: if <test_path> is a C-File, Sherlock is invoked on this C-File, if <test_path> is a directory, SHERLOCK is invoked in an infinite loop on each C-File in <test_path> and all its subdirectories

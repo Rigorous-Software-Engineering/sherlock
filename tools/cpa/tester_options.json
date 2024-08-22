@@ -1,0 +1,5 @@
+{
+    "symbolic_constraints_only": [true,false],
+    "waiting_time": [30,100,300],
+    "always_instrument" : [true, false]
+}

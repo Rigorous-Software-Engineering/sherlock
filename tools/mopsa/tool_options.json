@@ -1,0 +1,19 @@
+[
+  {
+    "name": "-config",
+    "possible_values": [
+      "tools/mopsa/configs/default-config.json",
+      "tools/mopsa/configs/cell-rel-itv.json",
+      "tools/mopsa/configs/cell-itv-powerset-zero.json",
+      "tools/mopsa/configs/cell-pack-rel-itv-congr.json",
+      "tools/mopsa/configs/cell-string-length-pointer-sentinel-pack-rel-itv.json",
+      "tools/mopsa/configs/cell-string-length-itv-zero.json",
+      "tools/mopsa/configs/cell-itv.json",
+      "tools/mopsa/configs/cell-string-length-pointer-sentinel-pack-rel-itv-congr.json",
+      "tools/mopsa/configs/cell-string-length-itv-powerset-zero.json",
+      "tools/mopsa/configs/cell-string-length-pack-rel-itv-congr.json",
+      "tools/mopsa/configs/cell-string-length-itv-congr.json",
+      "tools/mopsa/configs/cell-string-length-pointer-sentinel-itv.json"
+    ]
+  }
+]

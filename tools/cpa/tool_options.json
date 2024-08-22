@@ -1,0 +1,14 @@
+[
+  {
+    "name": "-setprop solver.floatingPointRoundingMode",
+    "possible_values": ["NEAREST_TIES_TO_EVEN", "TOWARD_POSITIVE", "TOWARD_NEGATIVE", "TOWARD_ZERO"]
+  },
+  {
+    "name": "-setprop solver.nonLinearArithmetic",
+    "possible_values": ["USE", "APPROXIMATE_FALLBACK", "APPROXIMATE_ALWAYS"]
+  },
+  {
+    "name": "-setprop solver.synchronize",
+    "possible_values": ["true","false"]
+  }
+]

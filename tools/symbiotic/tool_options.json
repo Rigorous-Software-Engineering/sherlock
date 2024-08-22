@@ -1,0 +1,38 @@
+[
+  {
+    "name": "",
+    "possible_values": ["--32","--64"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--no-slice",""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--explicit-symbolic", ""]
+  },
+  {
+    "name": "",
+    "possible_values": ["--undefined-retval-nosym", ""]
+  },
+  {
+    "name": "--optimize",
+    "possible_values": ["before-conservative", "after-conservative","before-02","after-02","before-03","after-03","none"]
+  },
+  {
+    "name": "--repeat-slicing",
+    "possible_values": ["0", "1","3","10"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--overflow-with-clang", ""]
+  },
+  {
+    "name": "--pta",
+    "possible_values": ["fs", "fi","inv"]
+  },
+  {
+    "name": "",
+    "possible_values": ["--full-instrumentation", ""]
+  }
+]
