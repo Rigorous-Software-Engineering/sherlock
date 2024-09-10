@@ -33,7 +33,7 @@ docker run -it sherlock
 You can let Sherlock start a testing campaign of an analyzer by invoking
 
 ```
-./sherlock -t <analyzer>
+./sherlock.sh -t <analyzer>
 ```
 
 where `<analyzer>` is one of `cbmc`, `clam`, `cpa`, `esbmc`, `klee`, `mopsa`, `ultimate` or `symbiotic`. Sherlock will by default pick seed files from the directory `testfiles`.
@@ -41,23 +41,23 @@ where `<analyzer>` is one of `cbmc`, `clam`, `cpa`, `esbmc`, `klee`, `mopsa`, `u
 
 To test <analyzer> with a specific seed file run
 ```
-./sherlock -t <analyzer> <path>
+./sherlock.sh -t <analyzer> <path>
 ```
 If `<path>` is a C-file, Sherlock tests `<analyzer>` on this C-file only. If `<path>` is a directory, Sherlock tests `<analyzer>` with each C-File in `<path>` and its subdirectories one by one in an infinite loop.
 
 Specify option `-b` to provide a budget, so  a number of testing iterations. (If omitted Sherlock tests with a specific seed file until it finds a bug)
 ```
-./sherlock -t <analyzer> -b <budget>
+./sherlock.sh -t <analyzer> -b <budget>
 ```
 In order to see reproducible results (up to timing), specify the initial integer seed for the fuzzing process of Sherlock by using option `-s`:
 ```
-./sherlock -t <analyzer> -s <seed>
+./sherlock.sh -t <analyzer> -s <seed>
 ```
 
 To get more detailed information about Sherlock's options invoke:
 
 ```
-./sherlock -h
+./sherlock.sh -h
 ```
 
 Finally, you can have look at Sherlock's log file `out.csv` that contains detailed information about the fuzzing process.
@@ -148,6 +148,9 @@ docker run -it sherlock:buggy_cbmc
 root@<buggy_container_id>:/home/sherlock# ./sherlock.sh -s <seed> -t cbmc -o "<analyzer_options>" testfiles/testcomp22/nla-digbench-scaling/hard-u_valuebound100.c
 ```
 
+Here you need to replace `<seed>` with an integer seed and `<analyzer_options>` with the analyzer options that were used to find the bug, here `--unwind 1 --round-to-minus-inf --reachability-slice-fb --drop-unused-functions --max-field-sensitivity-array-size 1 --partial-loops --string-printable --arrays-uf-always`.
+You can find this information in the bug ID folders in sherlock/reproduce/ .
+
 **To find the full list of parameters of the sherlock command of a specific bug, please follow the instructions within each bug ID folder in the folder sherlock/reproduce/**
 
 If you want to reproduce the results for the baselines, build the Dockerfile in the directories `sherlock-MT` or `sherlock-MT+VR`,
@@ -179,4 +182,3 @@ To this end we need to invoke Sherlock with option `-c`. This option makes Sherl
 Sherlock will then produce different bug reports in the directory `bug_files`.
 In order to verify that Sherlock found the 'right' bug after some time, execute the above commands with several bug reports, i.e.
 `bug_files/1`, `bug_files/2`, etc. 
-
